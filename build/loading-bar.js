@@ -199,12 +199,10 @@ angular.module('cfp.loadingBar', [])
 
         if(options.includeBar) {
           $parent.append(loadingBarContainer);
-          loadingBarContainer.addClass('in');
         }
 
         if(options.includeSpinner) {
           $parent.append(spinner);
-          spinner.addClass('in');
         }
       };
 
