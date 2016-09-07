@@ -333,6 +333,10 @@ angular.module('cfp.loadingBar', [])
       }
 
       function _complete() {
+        if (!currentBar) {
+          return;
+        }
+
         _set(1);
         $timeout.cancel(completeTimeout);
 
